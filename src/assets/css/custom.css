@@ -1,0 +1,27 @@
+.main{
+	background: linear-gradient(135deg, #0079bf, #5067c5);
+}
+h1{
+	font-family: 'poppins'
+}
+.lead{
+	font-size:1.3rem;
+    font-weight: 300;
+    /*font-family: 'Chathura', sans-serif;*/
+    font-family: 'poppins', sans-serif;
+   line-height: 1.8;
+}
+.ex-navbar{
+	padding-top:1rem;
+	padding-bottom:1rem;
+	z-index: 100;
+}
+
+.ex-navbar, .ex-navbar *{
+	transition: all .3s ease-out;
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition:all .3s ease-out;
+	-ms-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+
+}

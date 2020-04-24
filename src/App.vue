@@ -1,28 +1,50 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="main min-h-screen w-full">
+
+	<div class="ex-navbar w-full">
+		<div class="container mx-auto flex justify-between">
+			<div class="logo py-3">
+				<a href="#" class="text-white">ExceedBravo</a>
+			</div>
+			<div class="navbar__nav">
+
+				<ul class="flex">
+					<li class="py-2 px-2">
+						<router-link to="/" class="text-white" exact>Home</router-link>
+					</li>
+					<li class="py-2 px-2">
+						<router-link to="/about"  class="text-white">About</router-link>
+					</li>
+					<li class="py-2 px-2">
+						<router-link to="/contact"  class="text-white">Contact</router-link>
+					</li>
+				</ul>
+				
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container mx-auto ">
+		<div class="content flex justify-between items-center py-8">
+			<div class="content_details py-5 mx-8 w-1/2	">
+				<router-view></router-view>
+			</div>
+			<div class="content__placeholder"></div>
+		</div>
+	</div>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+	export default{
+		name: 'App',
+		data(){
+			return{
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+			}
+		}
+	}
+	
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
